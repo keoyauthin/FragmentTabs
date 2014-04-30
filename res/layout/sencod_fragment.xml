@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SencondFragment"
+    android:background="@drawable/bg" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+<!--     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:gravity="center"
+        android:text="@string/sencond_fragment" /> -->
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/sublocality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/refresh"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="98dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/refresh"
+        android:layout_below="@+id/sublocality"
+        android:layout_marginTop="52dp"
+        android:text="Medium Text"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

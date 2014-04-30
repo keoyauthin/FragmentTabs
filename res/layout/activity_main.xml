@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tabslayout"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_bg"
+        android:padding="2dp" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tabslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/shape_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgBtn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:contentDescription="@string/hello_world"
+            android:onClick="onBtnClick"
+            android:src="@drawable/home_press" />
+
+        <ImageButton
+            android:id="@+id/imgBtn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:contentDescription="@string/hello_world"
+            android:onClick="onBtnClick"
+            android:src="@drawable/cover" />
+
+        <ImageButton
+            android:id="@+id/imgBtn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:contentDescription="@string/hello_world"
+            android:onClick="onBtnClick"
+            android:src="@drawable/database" />
+
+        <ImageButton
+            android:id="@+id/imgBtn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:contentDescription="@string/hello_world"
+            android:onClick="onBtnClick"
+            android:src="@drawable/customers" />
+
+        <ImageButton
+            android:id="@+id/imgBtn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:contentDescription="@string/hello_world"
+            android:onClick="onBtnClick"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+
+</RelativeLayout>
